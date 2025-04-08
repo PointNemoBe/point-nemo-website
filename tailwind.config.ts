@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -52,6 +53,16 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				// Point Nemo custom colors
+				nemo: {
+					'forest': '#2A5D45',
+					'moss': '#4A7C59',
+					'leaf': '#89B399',
+					'sky': '#3A7CA5',
+					'water': '#81C3D7',
+					'earth': '#B98B73',
+					'sand': '#E2C2A2',
+				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
@@ -89,7 +100,11 @@ export default {
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out'
-			}
+			},
+			fontFamily: {
+				'sans': ['Montserrat', 'sans-serif'],
+				'display': ['Playfair Display', 'serif'],
+			},
 		}
 	},
 	plugins: [require("tailwindcss-animate")],
