@@ -1,8 +1,8 @@
 
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { Leaf } from "lucide-react";
 import { cn } from "@/lib/utils";
+import PointNemoLogo from "./PointNemoLogo";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -35,7 +35,7 @@ const Navbar = () => {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 flex justify-between items-center">
         <a href="#" className="flex items-center">
-          <Leaf className="h-8 w-8 text-nemo-forest mr-2" />
+          <PointNemoLogo className="mr-2" />
           <span className="font-display text-2xl font-bold text-nemo-forest">Point Nemo</span>
         </a>
 
