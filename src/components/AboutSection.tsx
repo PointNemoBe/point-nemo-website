@@ -14,8 +14,8 @@ const AboutSection = () => {
       <div className="grid md:grid-cols-2 gap-12 items-center">
         <div>
           <img 
-            src="https://images.unsplash.com/photo-1433086966358-54859d0ed716?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
-            alt="Paysage wallon avec cascade" 
+            src="https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+            alt="Forêt de pins" 
             className="rounded-lg shadow-lg w-full h-[500px] object-cover"
           />
         </div>
