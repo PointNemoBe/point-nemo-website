@@ -1,28 +1,19 @@
-
 import { Button } from "@/components/ui/button";
 import { MapPin, Users, Calendar } from "lucide-react";
 import { ExcursionList } from "./excursions/ExcursionList";
 import { ExcursionInfoBox } from "./excursions/ExcursionInfoBox";
 import { ExcursionIncludesList } from "./excursions/ExcursionIncludesList";
 import { excursionData } from "./excursions/ExcursionData";
-
 const ExcursionsSection = () => {
-  return (
-    <section id="excursions" className="section-container bg-gray-50">
+  return <section id="excursions" className="section-container bg-gray-50">
       <div className="text-center mb-12">
         <h2 className="section-title">Nos excursions</h2>
-        <p className="section-subtitle max-w-3xl mx-auto">
-          Des balades guidées d'environ 3 heures, sur un parcours de 3 à 5 km, à la découverte 
-          de paysages et d'écosystèmes variés : bois, prairies, zones humides, terrains agricoles...
-        </p>
+        <p className="section-subtitle max-w-3xl mx-auto">Des balades nature guidées à la découverte de paysages et d'écosystèmes variés.</p>
       </div>
       
       <div className="bg-white p-6 rounded-lg shadow-sm mb-12 max-w-3xl mx-auto">
         <div className="flex flex-col md:flex-row items-start md:items-center gap-4 mb-4">
-          <ExcursionInfoBox 
-            icon={<MapPin className="h-6 w-6 text-nemo-forest" />}
-            title="Où ça se passe ?"
-          >
+          <ExcursionInfoBox icon={<MapPin className="h-6 w-6 text-nemo-forest" />} title="Où ça se passe ?">
             <p className="text-gray-600">
               Les excursions ont lieu en <strong>Brabant wallon</strong> et dans ses environs, selon la demande, dans des lieux choisis 
               pour la diversité de leurs paysages et écosystèmes. Le lieu peut être adapté en fonction des besoins spécifiques.
@@ -31,10 +22,7 @@ const ExcursionsSection = () => {
         </div>
         
         <div className="flex flex-col md:flex-row items-start md:items-center gap-4">
-          <ExcursionInfoBox 
-            icon={<Users className="h-6 w-6 text-nemo-forest" />}
-            title="Pour qui ?"
-          >
+          <ExcursionInfoBox icon={<Users className="h-6 w-6 text-nemo-forest" />} title="Pour qui ?">
             <p className="text-gray-600">
               <strong>Adultes et ados</strong> (à partir de 10-12 ans), en <strong>groupes de 5 à 15 personnes</strong> (max 20). 
               Aucun prérequis, juste de la curiosité et de bonnes chaussures !
@@ -63,8 +51,6 @@ const ExcursionsSection = () => {
           </a>
         </Button>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default ExcursionsSection;
