@@ -1,7 +1,7 @@
 
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { MapPin, Users, Clock, Calendar, Backpack, Building, Family, Sparkles } from "lucide-react";
+import { MapPin, Users, Clock, Calendar, Backpack, Building, Sparkles, BookOpen, Compass } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 
 const excursionData = [
@@ -36,7 +36,7 @@ const excursionData = [
     audience: "Familles",
     difficulty: "Facile",
     location: "Brabant wallon",
-    icon: <Family className="h-5 w-5" />
+    icon: <Users className="h-5 w-5" /> // Remplacé Family par Users
   },
   {
     id: 4,
