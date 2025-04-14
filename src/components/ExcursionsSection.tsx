@@ -1,21 +1,9 @@
-
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { MapPin, Users, Clock, Calendar, Backpack, Building, Sparkles, BookOpen, Compass } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 
 const excursionData = [
-  {
-    id: 1,
-    title: "Découverte de la faune et flore locale",
-    description: "Une immersion dans les écosystèmes du Brabant wallon, idéale pour redécouvrir la biodiversité qui vous entoure. Bois, prairies, zones humides... ouvrez les yeux sur la richesse naturelle.",
-    image: "https://images.unsplash.com/photo-1518495973542-4542c06a5843?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-    duration: "3 heures",
-    audience: "Tous publics",
-    difficulty: "Facile",
-    location: "Brabant wallon",
-    icon: <Backpack className="h-5 w-5" />
-  },
   {
     id: 2,
     title: "Team building nature",
@@ -36,7 +24,7 @@ const excursionData = [
     audience: "Familles",
     difficulty: "Facile",
     location: "Brabant wallon",
-    icon: <Users className="h-5 w-5" /> // Remplacé Family par Users
+    icon: <Users className="h-5 w-5" />
   },
   {
     id: 4,
