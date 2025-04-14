@@ -1,23 +1,14 @@
-
 import { Compass, Earth, Mountain, Leaf, Users, BookOpen } from "lucide-react";
-
 const AboutSection = () => {
-  return (
-    <section id="about" className="section-container">
+  return <section id="about" className="section-container">
       <div className="text-center mb-16">
         <h2 className="section-title">À propos de Point Nemo</h2>
-        <p className="section-subtitle">
-          Un projet qui vise à reconnecter les humains à la nature et à leur territoire dans un monde de plus en plus déconnecté des réalités naturelles.
-        </p>
+        
       </div>
       
       <div className="grid md:grid-cols-2 gap-12 items-center">
         <div>
-          <img 
-            src="https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
-            alt="Forêt de pins" 
-            className="rounded-lg shadow-lg w-full h-[500px] object-cover"
-          />
+          <img src="https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Forêt de pins" className="rounded-lg shadow-lg w-full h-[500px] object-cover" />
         </div>
         
         <div className="space-y-8">
@@ -64,8 +55,6 @@ const AboutSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default AboutSection;
