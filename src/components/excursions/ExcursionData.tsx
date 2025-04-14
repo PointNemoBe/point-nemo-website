@@ -11,7 +11,7 @@ export const excursionData: ExcursionType[] = [
     duration: "4 heures",
     audience: "Entreprises",
     difficulty: "Modéré",
-    location: "Sur mesure",
+    location: "Brabant Wallon et environs",
     icon: <Building className="h-5 w-5" />
   },
   {
@@ -22,7 +22,7 @@ export const excursionData: ExcursionType[] = [
     duration: "3 heures",
     audience: "Familles",
     difficulty: "Facile",
-    location: "Brabant wallon",
+    location: "Brabant Wallon et environs",
     icon: <Users className="h-5 w-5" />
   },
   {
@@ -33,7 +33,7 @@ export const excursionData: ExcursionType[] = [
     duration: "Variable",
     audience: "Sur mesure",
     difficulty: "Adaptée",
-    location: "À définir",
+    location: "Brabant Wallon et environs",
     icon: <Sparkles className="h-5 w-5" />
   }
 ];
