@@ -1,5 +1,7 @@
+
 import { Button } from "@/components/ui/button";
 import { ArrowDown } from "lucide-react";
+
 const Hero = () => {
   return <div className="relative min-h-screen flex flex-col items-center justify-center text-center px-4 sm:px-6 overflow-hidden">
       {/* Background image */}
@@ -10,9 +12,15 @@ const Hero = () => {
       </div>
       
       <div className="relative z-10 max-w-4xl mx-auto">
-        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-display font-bold mb-6 text-white">Reconnectez vous à la Nature</h1>
+        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-display font-bold mb-6 text-white">Reconnectez-vous à la Nature</h1>
         
-        <p className="text-lg sm:text-xl md:text-2xl text-white/90 mb-10 max-w-2xl mx-auto">Point Nemo vous invite à reprendre conscience de votre territoire et à mieux comprendre les enjeux environnementaux à travers des expériences immersives en pleine nature.</p>
+        <p className="text-lg sm:text-xl md:text-2xl text-white/90 mb-6 max-w-3xl mx-auto">
+          Point Nemo vous invite à (re)découvrir la richesse des écosystèmes de nos territoires à travers des excursions guidées immersives.
+        </p>
+        
+        <p className="text-base sm:text-lg text-white/80 mb-10 max-w-2xl mx-auto italic">
+          "Ouvrir les yeux, aiguiser les sens, et comprendre notre place dans la grande famille du vivant."
+        </p>
         
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <Button asChild size="lg" className="bg-nemo-forest hover:bg-nemo-moss text-white px-8 py-6 text-lg">
