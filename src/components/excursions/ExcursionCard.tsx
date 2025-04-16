@@ -1,6 +1,5 @@
 
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Clock, MapPin } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { ExcursionType } from "./types";
@@ -35,11 +34,7 @@ export const ExcursionCard = ({ excursion }: { excursion: ExcursionType }) => {
       <CardContent className="flex-grow">
         <p className="text-gray-600">{excursion.description}</p>
       </CardContent>
-      <CardFooter className="border-t pt-4">
-        <Button className="w-full bg-nemo-forest hover:bg-nemo-moss">
-          En savoir plus
-        </Button>
-      </CardFooter>
+      {/* Removed "En savoir plus" button */}
     </Card>
   );
 };
