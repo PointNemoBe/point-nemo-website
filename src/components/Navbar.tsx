@@ -47,9 +47,9 @@ const Navbar = () => {
           <a href="#excursions" className="font-medium text-gray-600 hover:text-nemo-forest transition-colors">
             Nos excursions
           </a>
-          <a href="#testimonials" className="font-medium text-gray-600 hover:text-nemo-forest transition-colors">
+          {/* <a href="#testimonials" className="font-medium text-gray-600 hover:text-nemo-forest transition-colors">
             Témoignages
-          </a>
+          </a> */}
           <a href="#contact">
             <Button variant="default" className="bg-nemo-forest hover:bg-nemo-moss">
               Contact
