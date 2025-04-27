@@ -14,13 +14,14 @@ const AboutMeSection = () => {
           </div>
         </div>
 
-        <p className="text-gray-600 text-justify font-normal text-lg">Depuis toujours, j'aime comprendre comment la Terre fonctionne, comment le vivant s'organise, interagit, évolue. 
+        <p className="text-gray-600 text-justify font-normal text-base">Depuis toujours, j'aime comprendre comment la Terre fonctionne, comment le vivant s'organise, interagit, évolue.  C'est ce qui m'a poussé à étudier la géographie, puis à me former comme Guide Nature auprès des Cercles des Naturalistes de Belgique (CNB).  
 
-C'est ce qui m'a poussé à étudier la géographie, puis à me former comme Guide Nature auprès des Cercles des Naturalistes de Belgique (CNB). 
+Avec le temps, une envie s'est précisée : aller au-delà des cercles de passionnés. Partager quelques clés de lecture avec celles et ceux qui, sans forcément s'y connaître, ressentent le besoin (ou pas) de se reconnecter à la nature.  
 
-Avec le temps, une envie s'est précisée : aller au-delà des cercles de passionnés. Partager quelques clés de lecture avec celles et ceux qui, sans forcément s'y connaître, ressentent le besoin (ou pas) de se reconnecter à la nature. 
+Point Nemo est né de ce besoin : proposer des excursions immersives, accessibles, où la découverte est aussi une manière de retrouver du lien — avec soi-même, avec les autres, avec le vivant et notre territoire. Sans prétendre apporter toutes les réponses, mais en entrouvrant quelques portes. 
 
-Point Nemo est né de ce besoin : proposer des excursions immersives, accessibles, où la découverte est aussi une manière de retrouver du lien — avec soi-même, avec les autres, avec le vivant et notre territoire. Sans prétendre apporter toutes les réponses, mais en entrouvrant quelques portes. À bientôt, Grégoire
+Au plaisir, 
+Grégoire
       </p>
       </div>
     </section>;
