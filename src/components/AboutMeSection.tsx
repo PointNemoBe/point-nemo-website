@@ -8,8 +8,8 @@ const AboutMeSection = () => {
         <h2 className="section-title">Qui suis-je ?</h2>
       </div>
 
-      <div className="grid md:grid-cols-2 gap-8 items-center"> {/* Reduced gap from 12 to 8 */}
-        <div className="flex justify-center md:justify-start">
+      <div className="max-w-4xl mx-auto space-y-6">
+        <div className="float-left mr-8 mb-4">
           <div className="w-64 h-64 overflow-hidden rounded-full border-4 border-nemo-leaf shadow-lg">
             <AspectRatio ratio={1 / 1}>
               <img 
@@ -21,23 +21,21 @@ const AboutMeSection = () => {
           </div>
         </div>
 
-        <div className="space-y-4">
-          <p className="text-gray-600 text-lg text-justify font-normal">
-            Depuis toujours, j'aime comprendre comment la Terre fonctionne, comment le vivant s'organise, interagit, évolue.
+        <p className="text-gray-600 text-lg text-justify font-normal">
+          Depuis toujours, j'aime comprendre comment la Terre fonctionne, comment le vivant s'organise, interagit, évolue.
 
-            C'est ce qui m'a poussé à étudier la géographie, puis à me former comme Guide Nature auprès des Cercles des Naturalistes de Belgique (CNB).
-            Avec le temps, une envie s'est précisée : aller au-delà des cercles de passionnés.
+          C'est ce qui m'a poussé à étudier la géographie, puis à me former comme Guide Nature auprès des Cercles des Naturalistes de Belgique (CNB).
+          Avec le temps, une envie s'est précisée : aller au-delà des cercles de passionnés.
 
-            Partager quelques clés de lecture avec celles et ceux qui, sans forcément s'y connaître, ressentent le besoin (ou pas) de se reconnecter à la nature.
+          Partager quelques clés de lecture avec celles et ceux qui, sans forcément s'y connaître, ressentent le besoin (ou pas) de se reconnecter à la nature.
 
-            Point Nemo est né de ce besoin : proposer des excursions immersives, accessibles, où la découverte est aussi une manière de retrouver du lien — avec soi-même, avec les autres, avec le vivant et notre territoire.
+          Point Nemo est né de ce besoin : proposer des excursions immersives, accessibles, où la découverte est aussi une manière de retrouver du lien — avec soi-même, avec les autres, avec le vivant et notre territoire.
 
-            Sans prétendre apporter toutes les réponses, mais en entrouvrant quelques portes.
-            À bientôt,
+          Sans prétendre apporter toutes les réponses, mais en entrouvrant quelques portes.
+          À bientôt,
 
-            Grégoire
-          </p>
-        </div>
+          Grégoire
+        </p>
       </div>
     </section>
   );
