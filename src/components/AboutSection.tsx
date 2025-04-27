@@ -1,4 +1,6 @@
-import { Compass, Earth, Mountain, Leaf, Users, BookOpen } from "lucide-react";
+
+import { Compass, Earth, Mountain } from "lucide-react";
+
 const AboutSection = () => {
   return (
     <section id="about" className="section-container">
@@ -23,9 +25,9 @@ const AboutSection = () => {
             <p className="text-gray-600">
               Le Point Nemo désigne le lieu le plus éloigné de toute terre
               émergée, perdu au cœur de l'océan Pacifique. Cette notion évoque
-              l'isolement et la déconnexion, faisant écho à nos sociétés
-              modernes, souvent déconnectées du vivant et des écosystèmes qui
-              nous entourent.
+              l'isolement, la distance, et la déconnexion, faisant écho à l'état
+              de nos sociétés modernes, souvent déconnectées du vivant et des
+              écosystèmes qui nous entourent.
             </p>
           </div>
 
@@ -35,22 +37,10 @@ const AboutSection = () => {
             </h3>
             <p className="text-gray-600">
               Point Nemo propose de redécouvrir la richesse des écosystèmes de
-              nos territoires à travers des excursions guidées immersives. Notre
-              approche est généraliste, accessible et systémique : nous
-              explorons les liens entre espèces, milieux, sols, climat, et
-              activités humaines.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-2xl font-display font-semibold text-nemo-forest mb-3">
-              Qui suis-je ?
-            </h3>
-            <p className="text-gray-600">
-              Guide nature certifié des Cercles des Naturalistes de Belgique
-              (CNB), je partage ma passion pour l'environnement et les
-              écosystèmes locaux à travers des excursions enrichissantes et
-              accessibles à tous.
+              nos territoires à travers des excursions guidées immersives.
+              L'objectif est d'ouvrir les yeux, d'aiguiser les sens, et de
+              transmettre des clés de compréhension sur le fonctionnement du
+              vivant.
             </p>
           </div>
 
@@ -79,4 +69,5 @@ const AboutSection = () => {
     </section>
   );
 };
+
 export default AboutSection;
