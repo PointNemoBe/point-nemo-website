@@ -8,7 +8,7 @@ const AboutMeSection = () => {
         <h2 className="section-title">Qui suis-je ?</h2>
       </div>
 
-      <div className="grid md:grid-cols-2 gap-12 items-start">
+      <div className="grid md:grid-cols-2 gap-8 items-center"> {/* Reduced gap from 12 to 8 */}
         <div className="flex justify-center md:justify-start">
           <div className="w-64 h-64 overflow-hidden rounded-full border-4 border-nemo-leaf shadow-lg">
             <AspectRatio ratio={1 / 1}>
