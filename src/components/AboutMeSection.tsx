@@ -7,7 +7,7 @@ const AboutMeSection = () => {
 
       <div className="grid md:grid-cols-2 gap-12 items-center">
         <div className="space-y-4">
-          <p className="text-gray-800 text-lg text-justify">Géographe de formation et passionné de nature depuisGuide nature certifié des Cercles des Naturalistes de Belgique (CNB), je partage ma passion pour l'environnement et les écosystèmes locaux à travers des excursions enrichissantes et accessibles à tous.</p>
+          <p className="text-gray-600 text-lg text-justify mx-0 px-0 font-normal">Géographe de formation et passionné de nature  Guide nature certifié des Cercles des Naturalistes de Belgique (CNB), je partage ma passion pour l'environnement et les écosystèmes locaux à travers des excursions enrichissantes et accessibles à tous.</p>
         </div>
 
         <div className="flex justify-center md:justify-end">
