@@ -10,8 +10,8 @@ const ExcursionsSection = () => {
       <div className="text-center mb-12">
         <h2 className="section-title">Nos excursions</h2>
         <p className="section-subtitle max-w-3xl mx-auto">
-          Des balades nature guidées à la découverte de paysages et
-          d'écosystèmes variés.
+          Des balades nature guidées immersives, à la découverte de paysages et
+          écosystèmes variés.
         </p>
       </div>
 
@@ -26,7 +26,7 @@ const ExcursionsSection = () => {
         <ExcursionIncludesList />
       </div>
 
-     <div className="bg-white p-6 rounded-lg shadow-sm mb-12 max-w-3xl mx-auto">
+      <div className="bg-white p-6 rounded-lg shadow-sm mb-12 max-w-3xl mx-auto">
         <div className="flex flex-col md:flex-row items-start md:items-center gap-4 mb-4">
           <ExcursionInfoBox
             icon={<MapPin className="h-6 w-6 text-nemo-forest" />}
