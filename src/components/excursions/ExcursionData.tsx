@@ -33,7 +33,7 @@ export const excursionData: ExcursionType[] = [
     duration: "Variable",
     audience: "Sur mesure",
     difficulty: "Adaptée",
-    location: "Brabant Wallon et environs",
+    location: "Variable",
     icon: <Sparkles className="h-5 w-5" />
   }
 ];
