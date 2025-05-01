@@ -26,7 +26,7 @@ const AboutSection = () => {
               Le Point Nemo désigne le lieu le plus éloigné de toute terre
               émergée, perdu au cœur de l'océan Pacifique. Cette notion évoque
               l'isolement, la distance, et la déconnexion, faisant écho à l'état
-              de nos sociétés modernes, souvent déconnectées du vivant et des
+              de nos sociétés modernes, trop souvent déconnectées du vivant et des
               écosystèmes qui nous entourent.
             </p>
           </div>
