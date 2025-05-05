@@ -1,9 +1,11 @@
+
 import { Button } from "@/components/ui/button";
-import { MapPin, Users, Calendar } from "lucide-react";
+import { Calendar } from "lucide-react";
 import { ExcursionList } from "./excursions/ExcursionList";
-import { ExcursionInfoBox } from "./excursions/ExcursionInfoBox";
 import { ExcursionIncludesList } from "./excursions/ExcursionIncludesList";
 import { excursionData } from "./excursions/ExcursionData";
+import { ExcursionFAQ } from "./excursions/ExcursionFAQ";
+
 const ExcursionsSection = () => {
   return (
     <section id="excursions" className="section-container bg-gray-50">
@@ -26,34 +28,8 @@ const ExcursionsSection = () => {
         <ExcursionIncludesList />
       </div>
 
-      <div className="bg-white p-6 rounded-lg shadow-sm mb-12 max-w-3xl mx-auto">
-        <div className="flex flex-col md:flex-row items-start md:items-center gap-4 mb-4">
-          <ExcursionInfoBox
-            icon={<MapPin className="h-6 w-6 text-nemo-forest" />}
-            title="Où ça se passe ?"
-          >
-            <p className="text-gray-600">
-              Les excursions ont lieu en <strong>Brabant wallon</strong> et dans
-              ses environs, selon la demande, dans des lieux choisis pour la
-              diversité de leurs paysages et écosystèmes. Le lieu peut être
-              adapté en fonction des besoins spécifiques.
-            </p>
-          </ExcursionInfoBox>
-        </div>
+      <ExcursionFAQ />
 
-        <div className="flex flex-col md:flex-row items-start md:items-center gap-4">
-          <ExcursionInfoBox
-            icon={<Users className="h-6 w-6 text-nemo-forest" />}
-            title="Pour qui ?"
-          >
-            <p className="text-gray-600">
-              <strong>Adultes et ados</strong> (à partir de 10-12 ans), en{" "}
-              <strong>groupes de 5 à 15 personnes</strong> (max 20). Aucun
-              prérequis, juste de la curiosité et de bonnes chaussures !
-            </p>
-          </ExcursionInfoBox>
-        </div>
-      </div>
       <div className="mt-16 text-center">
         <h3 className="text-2xl font-display font-semibold mb-6">
           Vous avez un besoin spécifique ?
