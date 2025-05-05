@@ -50,7 +50,7 @@ const Navbar = () => {
           <a href="#aboutme" className="font-medium text-gray-600 hover:text-nemo-forest transition-colors">
             Derrière Point Nemo
           </a>
-          <a href="/faq" className="font-medium text-gray-600 hover:text-nemo-forest transition-colors">
+          <a href="#faq" className="font-medium text-gray-600 hover:text-nemo-forest transition-colors">
             FAQ
           </a>
           <a href="#contact">

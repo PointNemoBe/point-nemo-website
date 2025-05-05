@@ -4,7 +4,7 @@ import { MapPin, Users, Clock, Euro, HelpCircle, Link } from "lucide-react";
 
 export const ExcursionFAQ = () => {
   return (
-    <div className="bg-white p-6 rounded-lg shadow-sm max-w-3xl mx-auto mb-12">
+    <div id="faq" className="bg-white p-6 rounded-lg shadow-sm max-w-3xl mx-auto mb-12">
       <Accordion type="single" collapsible className="w-full">
         <AccordionItem value="item-1">
           <AccordionTrigger className="flex gap-2 text-nemo-forest font-medium">
