@@ -47,6 +47,9 @@ const Navbar = () => {
           <a href="#excursions" className="font-medium text-gray-600 hover:text-nemo-forest transition-colors">
             Nos excursions
           </a>
+          <a href="#aboutme" className="font-medium text-gray-600 hover:text-nemo-forest transition-colors">
+          Derrière Point Nemo
+          </a>          
           {/* <a href="#testimonials" className="font-medium text-gray-600 hover:text-nemo-forest transition-colors">
             Témoignages
           </a> */}

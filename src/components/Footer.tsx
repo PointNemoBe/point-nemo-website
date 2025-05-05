@@ -20,9 +20,12 @@ const Footer = () => {
             <a href="#excursions" className="hover:text-nemo-leaf transition-colors">
               Nos excursions
             </a>
-            <a href="#testimonials" className="hover:text-nemo-leaf transition-colors">
+            <a href="#aboutme" className="hover:text-nemo-leaf transition-colors">
+              Derrière Point Nemo
+            </a>            
+            {/* <a href="#testimonials" className="hover:text-nemo-leaf transition-colors">
               Témoignages
-            </a>
+            </a> */}
             <a href="#contact" className="hover:text-nemo-leaf transition-colors">
               Contact
             </a>

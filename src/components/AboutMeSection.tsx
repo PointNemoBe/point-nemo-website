@@ -1,7 +1,7 @@
 import { AspectRatio } from "./ui/aspect-ratio";
 const AboutMeSection = () => {
   return (
-    <section className="section-container">
+    <section id="aboutme" className="section-container">
       <div className="text-center mb-16">
         <h2 className="section-title">Qui suis-je ?</h2>
       </div>
