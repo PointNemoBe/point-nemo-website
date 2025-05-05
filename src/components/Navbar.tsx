@@ -34,7 +34,7 @@ const Navbar = () => {
       )}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 flex justify-between items-center">
-        <a href="#" className="flex items-center">
+        <a href="/" className="flex items-center">
           <PointNemoLogo className="mr-2" />
           <span className="font-display text-2xl font-bold text-nemo-forest">Point Nemo</span>
         </a>
@@ -48,11 +48,11 @@ const Navbar = () => {
             Nos excursions
           </a>
           <a href="#aboutme" className="font-medium text-gray-600 hover:text-nemo-forest transition-colors">
-          Derrière Point Nemo
-          </a>          
-          {/* <a href="#testimonials" className="font-medium text-gray-600 hover:text-nemo-forest transition-colors">
-            Témoignages
-          </a> */}
+            Derrière Point Nemo
+          </a>
+          <a href="/faq" className="font-medium text-gray-600 hover:text-nemo-forest transition-colors">
+            FAQ
+          </a>
           <a href="#contact">
             <Button variant="default" className="bg-nemo-forest hover:bg-nemo-moss">
               Contact
@@ -102,11 +102,18 @@ const Navbar = () => {
               Nos excursions
             </a>
             <a 
-              href="#testimonials" 
+              href="#aboutme" 
               className="px-4 py-2 font-medium text-gray-600 hover:text-nemo-forest transition-colors"
               onClick={() => setMobileMenuOpen(false)}
             >
-              Témoignages
+              Derrière Point Nemo
+            </a>
+            <a 
+              href="/faq" 
+              className="px-4 py-2 font-medium text-gray-600 hover:text-nemo-forest transition-colors"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              FAQ
             </a>
             <a 
               href="#contact" 

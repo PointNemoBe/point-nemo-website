@@ -4,7 +4,6 @@ import { Calendar } from "lucide-react";
 import { ExcursionList } from "./excursions/ExcursionList";
 import { ExcursionIncludesList } from "./excursions/ExcursionIncludesList";
 import { excursionData } from "./excursions/ExcursionData";
-import { ExcursionFAQ } from "./excursions/ExcursionFAQ";
 
 const ExcursionsSection = () => {
   return (
@@ -27,8 +26,6 @@ const ExcursionsSection = () => {
         </h3>
         <ExcursionIncludesList />
       </div>
-
-      <ExcursionFAQ />
 
       <div className="mt-16 text-center">
         <h3 className="text-2xl font-display font-semibold mb-6">
