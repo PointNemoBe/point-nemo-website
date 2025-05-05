@@ -1,8 +1,11 @@
 
+
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { MapPin, Users, Clock, Euro, HelpCircle, Link } from "lucide-react";
 
-export const ExcursionFAQ = () => {
+export const FAQAccordion = () => {
   return (
     <div id="faq" className="bg-white p-6 rounded-lg shadow-sm max-w-3xl mx-auto mb-12">
       <Accordion type="single" collapsible className="w-full">
@@ -20,7 +23,6 @@ export const ExcursionFAQ = () => {
             </p>
           </AccordionContent>
         </AccordionItem>
-        
         <AccordionItem value="item-2">
           <AccordionTrigger className="flex gap-2 text-nemo-forest font-medium">
             <Users className="h-5 w-5 text-nemo-forest flex-shrink-0" />
@@ -94,3 +96,27 @@ export const ExcursionFAQ = () => {
     </div>
   );
 };
+
+
+
+const FAQ = () => {
+  return (
+    <div className="min-h-screen">
+      <Navbar />
+      <div className="pt-24 pb-12 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <h1 className="text-4xl font-display font-bold text-center mb-8 text-nemo-forest">
+            Questions Fréquentes
+          </h1>
+          <p className="text-lg text-gray-600 text-center max-w-3xl mx-auto mb-12">
+            Retrouvez ici les réponses aux questions les plus fréquemment posées sur nos excursions et nos services.
+          </p>
+          <FAQAccordion />
+        </div>
+      </div>
+      <Footer />
+    </div>
+  );
+};
+
+export default FAQ;
