@@ -29,7 +29,7 @@ const ExcursionsSection = () => {
 
       <div className="mt-16 text-center">
         <h3 className="text-2xl font-display font-semibold mb-6">
-          Vous avez un besoin spécifique ?
+          Intérressé ?
         </h3>
         <p className="text-gray-600 max-w-2xl mx-auto mb-8">
           Les tarifs des excursions dépendent du lieu, du nombre de participants
