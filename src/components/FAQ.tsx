@@ -114,7 +114,6 @@ const FAQ = () => {
           <FAQAccordion />
         </div>
       </div>
-      <Footer />
     </div>
   );
 };
