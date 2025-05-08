@@ -36,11 +36,12 @@ const AboutSection = () => {
               Mission
             </h3>
             <p className="text-gray-600">
-              Point Nemo propose de redécouvrir la richesse des écosystèmes de
-              nos territoires à travers des excursions guidées immersives.
-              L'objectif est d'ouvrir les yeux, d'aiguiser les sens, et de
-              transmettre des clés de compréhension sur le fonctionnement du
-              vivant.
+            <strong>Point Nemo</strong> propose de redécouvrir la richesse des écosystèmes de nos territoires à travers
+            des excursions guidées immersives. L'objectif est d'éveiller les sens, d'ouvrir les yeux
+            et de transmettre des clés pour comprendre les liens et dynamiques entre le vivant,
+            le non-vivant et les activités humaines.
+            Une <strong>approche globale</strong> et <strong>systémique</strong> permettant de prendre du recul, d'observer et de comprendre
+            les écosystèmes qui nous entourent.
             </p>
           </div>
 
