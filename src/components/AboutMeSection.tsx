@@ -19,8 +19,8 @@ const AboutMeSection = () => {
         </div>
 
         <p className="text-gray-600 text-justify font-normal">
-          Père de deux enfants, géographe, j’ai grandi et je vis à Nivelles, en Brabant wallon - une région de plateaux agricoles fortement marquée par l’urbanisation et l’agriculture intensive.
-          L’impact de l’homme sur son environnement m’a toujours interpellé.
+          Père de deux enfants, géographe, j'ai grandi et vis à Nivelles, en Brabant wallon - une région de plateaux agricoles fortement marquée par l’urbanisation et l’agriculture intensive.
+          L’impact de l’homme sur son environnement m'a toujours interpellé.
         </p>
         <p className="text-gray-600 text-justify font-normal">
         J’aime comprendre comment la Terre fonctionne, comment le vivant s’organise, interagit avec son environnement, façonne et transforme les paysages au fil du temps.
@@ -31,9 +31,7 @@ const AboutMeSection = () => {
            Partager quelques clés de lecture avec celles et ceux qui, sans forcément s’y connaître, ressentent - ou pas - le besoin de se reconnecter à la nature.
         </p>
         <p className="text-gray-600 text-justify font-normal">
-          <strong>Point Nemo</strong> est né de ce besoin : proposer des excursions immersives et accessibles, où la découverte est aussi une manière de retisser du lien — avec soi-même, avec les autres, avec le vivant et notre territoire.
-        </p>
-        <p className="text-gray-600 text-justify font-normal">
+          <strong>Point Nemo</strong> est né de ce besoin: proposer des excursions accessibles, où la découverte est aussi une manière de retisser du lien avec le vivant et notre territoire.
           Sans prétendre apporter toutes les réponses, mais en entrouvrant quelques portes.
         </p>
         <p className="text-gray-600 text-justify font-normal">
