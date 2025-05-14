@@ -82,7 +82,7 @@ export const FAQAccordion = () => {
           </AccordionContent>
         </AccordionItem>
 
-        <AccordionItem value="item-6">
+        {/* <AccordionItem value="item-6">
           <AccordionTrigger className="flex gap-2 text-nemo-forest font-medium">
             <Link className="h-5 w-5 text-nemo-forest flex-shrink-0" />
             Les excursions sont-elles disponibles en anglais ?
@@ -93,7 +93,7 @@ export const FAQAccordion = () => {
               toutes les excursions peuvent être proposées en anglais.
             </p>
           </AccordionContent>
-        </AccordionItem>
+        </AccordionItem> */}
       </Accordion>
     </div>
   );
