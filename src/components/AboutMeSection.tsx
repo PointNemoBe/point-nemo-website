@@ -19,19 +19,19 @@ const AboutMeSection = () => {
         </div>
 
         <p className="text-gray-600 text-justify font-normal">
-          Père de deux enfants, géographe, j'ai grandi et vis à Nivelles, en Brabant wallon - une région de plateaux agricoles fortement marquée par l’urbanisation et l’agriculture intensive.
-          L’impact de l’homme sur son environnement m'a toujours interpellé.
+          Père de deux enfants, géographe, j'ai grandi et vis à Nivelles, en Brabant wallon - une région de plateaux agricoles fortement marquée par l'<strong>urbanisation</strong> et <strong>l'agriculture</strong> intensive.
+          <strong>L'impact de l'homme sur son environnement</strong> m'a toujours interpellé.
         </p>
         <p className="text-gray-600 text-justify font-normal">
-        J’aime comprendre comment la Terre fonctionne, comment le vivant s’organise, interagit avec son environnement, façonne et transforme les paysages au fil du temps.
-        C’est ce qui m’a poussé à étudier la géographie, puis à me former comme <strong>Guide Nature</strong> auprès des <a href="https://cercles-naturalistes.be" target="_blank" rel="noopener noreferrer">Cercles des Naturalistes de Belgique (CNB)</a>.
+        J'aime comprendre comment la Terre fonctionne, comment le vivant s'organise, interagit avec son environnement, façonne et transforme les paysages au fil du temps.
+        C'est notamment ce qui m'a poussé à étudier la <strong>géographie</strong>, puis à me former comme <strong>Guide Nature</strong> auprès des <a href="https://cercles-naturalistes.be" target="_blank" rel="noopener noreferrer">Cercles des Naturalistes de Belgique (CNB)</a>.
         </p>
         <p className="text-gray-600 text-justify font-normal">
-          Avec le temps, une envie s’est précisée : aller <strong>au-delà des cercles de passionnés</strong>.
-           Partager quelques clés de lecture avec celles et ceux qui, sans forcément s’y connaître, ressentent - ou pas - le besoin de se reconnecter à la nature.
+          Avec le temps, une envie s'est précisée : aller <strong>au-delà des cercles de passionnés</strong>.
+           Partager quelques clés de lecture avec celles et ceux qui, sans forcément s'y connaître, ressentent - ou pas - le besoin de se reconnecter à la nature.
         </p>
         <p className="text-gray-600 text-justify font-normal">
-          <strong>Point Nemo</strong> est né de ce besoin: proposer des excursions accessibles, où la découverte est aussi une manière de retisser du lien avec le vivant et notre territoire.
+          <strong>Point Nemo</strong> est né de ce besoin: proposer des excursions <strong>accessibles</strong>, où la <strong>découverte</strong> est aussi une manière de retisser du lien avec le vivant et notre territoire.
           Sans prétendre apporter toutes les réponses, mais en entrouvrant quelques portes.
         </p>
         <p className="text-gray-600 text-justify font-normal">
