@@ -16,9 +16,9 @@ export const FAQAccordion = () => {
           </AccordionTrigger>
           <AccordionContent>
             <p className="text-gray-600">
-              Les excursions ont lieu en <strong>Brabant wallon</strong> et dans
+              Étant basée à Nivelles, les excursions ont lieu en <strong>Brabant wallon</strong> et dans
               ses environs, selon la demande, dans des lieux choisis pour la
-              diversité de leurs paysages et écosystèmes. Le lieu peut être
+              diversité de leurs paysages et écosystèmes. Cepenadant, Le lieu peut être
               adapté en fonction des besoins spécifiques.
             </p>
           </AccordionContent>
@@ -30,9 +30,12 @@ export const FAQAccordion = () => {
           </AccordionTrigger>
           <AccordionContent>
             <p className="text-gray-600">
-              <strong>Adultes et ados</strong> (à partir de 10-12 ans), en{" "}
-              <strong>groupes de 5 à 15 personnes</strong> (max 20). Aucun
+              <strong>Adultes et enfants</strong> à partir de 10-12 ans, en{" "}
+              <strong>groupes de 5 à 20 personnes</strong>. Aucun
               prérequis, juste de la curiosité et de bonnes chaussures !
+              Concernant les personnes à mobilité réduite (PMR), il est préférable de
+              me contacter pour discuter des possibilités d'adaptation de l'itinéraire 
+              afin de garantir une expérience agréable pour tous.
             </p>
           </AccordionContent>
         </AccordionItem>
@@ -86,9 +89,8 @@ export const FAQAccordion = () => {
           </AccordionTrigger>
           <AccordionContent>
             <p className="text-gray-600">
-              Oui, pour les groupes internationaux ou ceux préférant l'anglais, 
-              toutes les excursions peuvent être proposées en anglais, 
-              garantissant ainsi une expérience inclusive et fluide.
+              Oui, pour les groupes internationaux ou les personnes ne parlant pas français,
+              toutes les excursions peuvent être proposées en anglais.
             </p>
           </AccordionContent>
         </AccordionItem>
