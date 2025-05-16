@@ -16,7 +16,7 @@ export const FAQAccordion = () => {
           </AccordionTrigger>
           <AccordionContent>
             <p className="text-gray-600">
-              Étant basée à Nivelles, les excursions ont lieu en <strong>Brabant wallon</strong> et dans
+              Étant basé à Nivelles, les excursions ont lieu en <strong>Brabant wallon</strong> et dans
               ses environs, selon la demande, dans des lieux choisis pour la
               diversité de leurs paysages et écosystèmes. Cepenadant, Le lieu peut être
               adapté en fonction des besoins spécifiques.
@@ -62,7 +62,7 @@ export const FAQAccordion = () => {
             <p className="text-gray-600">
               Les tarifs dépendent du lieu, du nombre de participants et des activités personnalisées. 
               Chaque expérience est ajustée pour répondre à vos besoins spécifiques. 
-              N'hésitez pas à me contacter pour obtenir un devis personnalisé.
+              N'hésitez pas à me contacter pour obtenir plus d'informations et un devis personnalisé.
             </p>
           </AccordionContent>
         </AccordionItem>
