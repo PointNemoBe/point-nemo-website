@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -10,7 +9,8 @@ import { useToast } from "@/components/ui/use-toast";
 const ContactSection = () => {
   const { toast } = useToast();
   const [formData, setFormData] = useState({
-    name: "",
+    nom: "",
+    prenom: "",
     email: "",
     phone: "",
     message: "",
@@ -35,7 +35,8 @@ const ContactSection = () => {
     
     // Reset form
     setFormData({
-      name: "",
+      nom: "",
+      prenom: "",
       email: "",
       phone: "",
       message: "",
@@ -51,23 +52,37 @@ const ContactSection = () => {
         </p>
       </div>
       
-      <div className="grid md:grid-cols-2 gap-12">
+      <div className="w-full max-w-3xl mx-auto">
         <div>
           <form onSubmit={handleSubmit} className="space-y-6">
             <div className="grid sm:grid-cols-2 gap-4">
               <div className="space-y-2">
-                <Label htmlFor="name">Nom complet</Label>
+                <Label htmlFor="nom">Nom <span className="text-red-600">*</span></Label>
                 <Input 
-                  id="name"
-                  name="name"
-                  value={formData.name}
+                  id="nom"
+                  name="nom"
+                  value={formData.nom}
                   onChange={handleChange}
                   placeholder="Votre nom"
                   required
                 />
               </div>
               <div className="space-y-2">
-                <Label htmlFor="email">Email</Label>
+                <Label htmlFor="prenom">Prénom <span className="text-red-600">*</span></Label>
+                <Input 
+                  id="prenom"
+                  name="prenom"
+                  value={formData.prenom}
+                  onChange={handleChange}
+                  placeholder="Votre prénom"
+                  required
+                />
+              </div>
+            </div>
+            
+            <div className="grid sm:grid-cols-2 gap-4">
+              <div className="space-y-2">
+                <Label htmlFor="email">Email <span className="text-red-600">*</span></Label>
                 <Input 
                   id="email"
                   name="email"
@@ -78,21 +93,20 @@ const ContactSection = () => {
                   required
                 />
               </div>
+              <div className="space-y-2">
+                <Label htmlFor="phone">Téléphone</Label>
+                <Input 
+                  id="phone"
+                  name="phone"
+                  value={formData.phone}
+                  onChange={handleChange}
+                  placeholder="+32 470 00 00 00"
+                />
+              </div>
             </div>
             
             <div className="space-y-2">
-              <Label htmlFor="phone">Téléphone</Label>
-              <Input 
-                id="phone"
-                name="phone"
-                value={formData.phone}
-                onChange={handleChange}
-                placeholder="+32 470 00 00 00"
-              />
-            </div>
-            
-            <div className="space-y-2">
-              <Label htmlFor="message">Message</Label>
+              <Label htmlFor="message">Message <span className="text-red-600">*</span></Label>
               <Textarea 
                 id="message"
                 name="message"
@@ -107,57 +121,9 @@ const ContactSection = () => {
             <Button type="submit" className="w-full bg-nemo-forest hover:bg-nemo-moss">
               Envoyer le message
             </Button>
+            <p className="text-xs text-gray-500 mt-2">* Champs obligatoires</p>
           </form>
-        </div>
-        
-        <div className="flex flex-col justify-between">
-          <div className="space-y-8">
-            <div className="bg-white p-6 rounded-lg shadow-sm">
-              <div className="flex items-start">
-                <MapPin className="mt-1 mr-4 h-5 w-5 text-nemo-forest" />
-                <div>
-                  <h3 className="font-semibold mb-1">Adresse</h3>
-                  <p className="text-gray-600">
-                    Bruxelles et sa périphérie
-                    <br />
-                    Belgique
-                  </p>
-                </div>
-              </div>
-            </div>
-            
-            <div className="bg-white p-6 rounded-lg shadow-sm">
-              <div className="flex items-start">
-                <Mail className="mt-1 mr-4 h-5 w-5 text-nemo-forest" />
-                <div>
-                  <h3 className="font-semibold mb-1">Email</h3>
-                  <a href="mailto:contact@point-nemo.be" className="text-nemo-forest hover:underline">
-                    contact@point-nemo.be
-                  </a>
-                </div>
-              </div>
-            </div>
-            
-            <div className="bg-white p-6 rounded-lg shadow-sm">
-              <div className="flex items-start">
-                <Phone className="mt-1 mr-4 h-5 w-5 text-nemo-forest" />
-                <div>
-                  <h3 className="font-semibold mb-1">Téléphone</h3>
-                  <a href="tel:+32470000000" className="text-nemo-forest hover:underline">
-                    +32 470 00 00 00
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <div className="mt-8 bg-white p-4 rounded-lg shadow-sm border border-nemo-leaf/20">
-            <p className="text-sm text-gray-600 italic">
-              "La connaissance de la nature est la voie pour comprendre notre place dans le monde et agir de manière responsable."
-            </p>
-          </div>
-        </div>
-      </div>
+        </div>      </div>
     </section>
   );
 };
