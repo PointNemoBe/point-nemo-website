@@ -47,8 +47,8 @@ export const FAQAccordion = () => {
           </AccordionTrigger>
           <AccordionContent>
             <p className="text-gray-600">
-              Les excursions durent généralement <strong>3 heures</strong>, sur un parcours de 3 à 5 km. 
-              Nous prenons le temps d'observer, d'apprendre et de nous connecter à la nature.
+              Les excursions durent généralement <strong>3-4 heures</strong>, sur un parcours de 3 à 5 km. 
+              Cependant, la durée et la distance peut être adaptée selon vos besoins.
             </p>
           </AccordionContent>
         </AccordionItem>

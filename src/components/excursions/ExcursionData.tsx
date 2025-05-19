@@ -16,11 +16,11 @@ export const excursionData: ExcursionType[] = [
   },
   {
     id: 3,
-    title: "Pour particuliers",
+    title: "Pour la famille et les amis",
     description: "Des balades pensées pour petits et grands curieux, avec des contenus accessibles, des jeux d'observation et des temps d'échange en famille ou entre amis.",
     image: "IMG_1803.jpg",
     duration: "4 heures",
-    audience: "Familles",
+    audience: "Particuliers",
     difficulty: "Facile",
     location: "Brabant Wallon et environs",
     icon: <Users className="h-5 w-5" />
