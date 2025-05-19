@@ -16,14 +16,35 @@ const ContactSection = () => {
     phone: "",
     message: "",
   });
+  const [status, setStatus] = useState<'idle' | 'success' | 'error'>('idle');
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e) => {
-    // No JS submit logic needed for Formspree, let the browser handle it
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setStatus('idle');
+    try {
+      const response = await fetch('https://formspree.io/f/mpwdnrbr', {
+        method: 'POST',
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+      const data = await response.json();
+      if (response.ok) {
+        setStatus('success');
+        setFormData({ nom: '', prenom: '', email: '', phone: '', message: '' });
+      } else {
+        setStatus('error');
+      }
+    } catch (error) {
+      setStatus('error');
+    }
   };
 
   return (
@@ -37,7 +58,7 @@ const ContactSection = () => {
       
       <div className="w-full max-w-3xl mx-auto">
         <div>
-          <form action="https://formspree.io/f/mpwdnrbr" method="POST" className="space-y-6">
+          <form className="space-y-6" onSubmit={handleSubmit}>
             <div className="grid sm:grid-cols-2 gap-4">
               <div className="space-y-2">
                 <Label htmlFor="nom">Nom <span className="text-red-600">*</span></Label>
@@ -102,6 +123,16 @@ const ContactSection = () => {
               Envoyer le message
             </Button>
             <p className="text-xs text-gray-500 mt-2">* Champs obligatoires</p>
+            {status === 'success' && (
+              <div className="mt-2 text-green-700 bg-green-100 border border-green-300 rounded p-2 text-center">
+                Message envoyé ! Nous vous répondrons dans les plus brefs délais.
+              </div>
+            )}
+            {status === 'error' && (
+              <div className="mt-2 text-red-700 bg-red-100 border border-red-300 rounded p-2 text-center">
+                Une erreur est survenue. Veuillez réessayer plus tard.
+              </div>
+            )}
           </form>
         </div>
         <div className="mt-8 p-6 bg-white rounded-lg shadow flex flex-col gap-2 items-start">
