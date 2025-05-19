@@ -10,7 +10,7 @@ const AboutMeSection = () => {
           <div className="w-48 h-46 overflow-hidden rounded-full border-4 border-nemo-leaf shadow-lg">
             <AspectRatio ratio={1 / 1}>
               <img
-                src="PN_Greg_2 Small.jpeg"
+                src="PN_Greg_2_small.jpeg"
                 alt="Photo"
                 className="object-cover w-full h-full"
               />
