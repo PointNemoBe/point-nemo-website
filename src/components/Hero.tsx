@@ -18,7 +18,7 @@ const Hero = () => {
 
       <div className="relative z-10 max-w-4xl mx-auto">
         <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-display font-bold mb-6 text-white">
-          Reconnectons-nous à la Nature
+          Reconnectez-vous à la Nature
         </h1>
 
         <p className="text-lg sm:text-xl md:text-2xl text-white/90 mb-6 max-w-3xl mx-auto">
