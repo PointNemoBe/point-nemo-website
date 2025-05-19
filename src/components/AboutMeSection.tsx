@@ -7,10 +7,10 @@ const AboutMeSection = () => {
       </div>
       <div className="max-w-7xl  mx-auto space-y-4">
         <div className="float-left mr-8 mb-4">
-          <div className="w-48 h-48 overflow-hidden rounded-full border-4 border-nemo-leaf shadow-lg">
+          <div className="w-48 h-46 overflow-hidden rounded-full border-4 border-nemo-leaf shadow-lg">
             <AspectRatio ratio={1 / 1}>
               <img
-                src="/lovable-uploads/8ce5c1f1-635f-48d8-90ba-616d8ddd1a86.png"
+                src="PN_Greg_2 Small.jpeg"
                 alt="Photo"
                 className="object-cover w-full h-full"
               />
