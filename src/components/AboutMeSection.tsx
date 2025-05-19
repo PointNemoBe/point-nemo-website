@@ -20,7 +20,7 @@ const AboutMeSection = () => {
 
         <p className="text-gray-600 text-justify font-normal">
           Père de deux enfants, géographe, j'ai grandi et vis à Nivelles, en Brabant wallon - une région de plateaux agricoles fortement marquée par 
-          l'<strong>urbanisation</strong> et <strong>l'agriculture intensive</strong>. <strong>L'impact de l'homme</strong> sur son environnement m'a toujours interpellé.
+          l'urbanisation et l'agriculture intensive. <strong>L'impact de l'homme</strong> sur son environnement m'a toujours interpellé.
         </p>
         <p className="text-gray-600 text-justify font-normal">
         J'aime comprendre comment la Terre fonctionne, comment le vivant s'organise, interagit avec son environnement, façonne et transforme les paysages au fil du temps.
