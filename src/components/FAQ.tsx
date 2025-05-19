@@ -3,7 +3,7 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { MapPin, Users, Clock, Euro, HelpCircle, Link } from "lucide-react";
+import { MapPin, Users, Clock, Euro, HelpCircle, CloudRain, Brain, Link } from "lucide-react";
 
 export const FAQAccordion = () => {
   return (
@@ -18,7 +18,7 @@ export const FAQAccordion = () => {
             <p className="text-gray-600">
               Étant basé à Nivelles, les excursions ont lieu en <strong>Brabant wallon</strong> et dans
               ses environs, selon la demande, dans des lieux choisis pour la
-              diversité de leurs paysages et écosystèmes. Cepenadant, Le lieu peut être
+              diversité de leurs paysages et écosystèmes. Cependant, Le lieu peut être
               adapté en fonction des besoins spécifiques.
             </p>
           </AccordionContent>
@@ -69,7 +69,7 @@ export const FAQAccordion = () => {
 
         <AccordionItem value="item-5">
           <AccordionTrigger className="flex gap-2 text-nemo-forest font-medium">
-            <HelpCircle className="h-5 w-5 text-nemo-forest flex-shrink-0" />
+            <Brain className="h-5 w-5 text-nemo-forest flex-shrink-0" />
             Faut-il avoir des connaissances préalables en nature ?
           </AccordionTrigger>
           <AccordionContent>
@@ -81,7 +81,22 @@ export const FAQAccordion = () => {
             </p>
           </AccordionContent>
         </AccordionItem>
-
+        <AccordionItem value="item-6">
+          <AccordionTrigger className="flex gap-2 text-nemo-forest font-medium">
+            <CloudRain className="h-5 w-5 text-nemo-forest flex-shrink-0" />
+            Puis-je reporter en cas de mauvais temps ?
+          </AccordionTrigger>
+          <AccordionContent>
+            <p className="text-gray-600">
+              Les excursions ont lieu en toute saison, y compris par temps de pluie. 
+              Dans ce cas, il est conseillé de prévoir des vêtements adaptés. 
+              Des instructions adéquates seront fournies avant l'excursion.
+              Cependant, en cas de conditions météorologiques extrêmes (pluies torrentielles, orages violents, alertes officielles, fermetures de forêts, etc.),
+              la sécurité des participants est primordiale. Dans ce cas,
+              la prestation pourra être reportée d'un commun accord.
+            </p>
+          </AccordionContent>
+        </AccordionItem>
         {/* <AccordionItem value="item-6">
           <AccordionTrigger className="flex gap-2 text-nemo-forest font-medium">
             <Link className="h-5 w-5 text-nemo-forest flex-shrink-0" />
