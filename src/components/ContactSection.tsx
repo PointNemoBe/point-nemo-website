@@ -3,9 +3,9 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
-import { Mail, Phone } from "lucide-react";
+import { Phone } from "lucide-react";
 import { useToast } from "@/components/ui/use-toast";
-import { FaLinkedin, FaInstagram } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
 
 const ContactSection = () => {
   const { toast } = useToast();
@@ -142,16 +142,9 @@ const ContactSection = () => {
             <Phone className="w-4 h-4 text-nemo-forest" />
             <a href="tel:+32479943156" className="hover:underline">+32 479 94 31 56</a>
           </div>
-          <div className="flex items-center gap-2 mt-1">
-            <Mail className="w-4 h-4 text-nemo-forest" />
-            <a href="mailto:gregoire.leroy86@icloud.com" className="hover:underline">gregoire.leroy86@icloud.com</a>
-          </div>
           <div className="flex gap-4 mt-4">
             <a href="https://www.linkedin.com/in/leroygr/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="text-nemo-forest hover:text-nemo-moss transition-colors">
               <FaLinkedin size={28} />
-            </a>
-            <a href="https://www.instagram.com/gregoire.leroy8/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="text-nemo-forest hover:text-nemo-moss transition-colors">
-              <FaInstagram size={28} />
             </a>
           </div>
         </div>
