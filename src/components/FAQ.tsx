@@ -1,9 +1,7 @@
-
-
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { MapPin, Users, Clock, Euro, HelpCircle, CloudRain, Brain, Link } from "lucide-react";
+import { MapPin, Users, Clock, Euro, HelpCircle, CloudRain, Brain, Link, Dog } from "lucide-react";
 
 export const FAQAccordion = () => {
   return (
@@ -16,10 +14,14 @@ export const FAQAccordion = () => {
           </AccordionTrigger>
           <AccordionContent>
             <p className="text-gray-600">
-              Étant basé à Nivelles, les excursions ont lieu en <strong>Brabant wallon</strong> et dans
-              ses environs, selon la demande, dans des lieux choisis pour la
-              diversité de leurs paysages et écosystèmes. Cependant, Le lieu peut être
-              adapté en fonction des besoins spécifiques.
+              Les excursions de Point Nemo ont lieu à <strong>Nivelles et dans les communes voisines</strong>, tant en Brabant wallon qu'en Hainaut: 
+              Ronquières, Feluy, Ittre, Braine-l'Alleud, Waterloo, Genappe, Villers-la-Ville, Les Bons-Villers, Ottignies-Louvain-la-Neuve, Lasne, Mont-Saint-Guibert, Chastre…
+
+              Des exceptions sont possibles, notamment en Forêt de Soignes (Bruxelles), par exemple pour des activités de type team building.
+
+              Le lieu peut aussi être adapté en fonction des besoins spécifiques.
+              
+              N'hésitez pas à me contacter pour en discuter !
             </p>
           </AccordionContent>
         </AccordionItem>
@@ -94,6 +96,20 @@ export const FAQAccordion = () => {
               Cependant, en cas de conditions météorologiques extrêmes (pluies torrentielles, orages violents, alertes officielles, fermetures de forêts, etc.),
               la sécurité des participants est primordiale. Dans ce cas,
               la prestation pourra être reportée d'un commun accord.
+            </p>
+          </AccordionContent>
+        </AccordionItem>
+        <AccordionItem value="item-7">
+          <AccordionTrigger className="flex gap-2 text-nemo-forest font-medium">
+            <Dog className="h-5 w-5 text-nemo-forest flex-shrink-0" />
+            Les animaux de compagnie sont-ils autorisés ?
+          </AccordionTrigger>
+          <AccordionContent>
+            <p className="text-gray-600">
+              En principe, <strong>les animaux de compagnie ne sont pas autorisés lors des balades.</strong> Même
+              si nous les adorons, leur présence n'est généralement pas compatible avec 
+              l'observation de la nature, et surtout de la faune sauvage qui pourrait être effrayée 
+              ou perturbée. Merci de votre compréhension !
             </p>
           </AccordionContent>
         </AccordionItem>
