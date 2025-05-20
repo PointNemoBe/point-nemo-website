@@ -36,7 +36,7 @@ const AboutMeSection = () => {
         </p>
         <p className="text-gray-600 text-justify font-normal">
           Au plaisir de se rencontrer sur le terrain,<br />
-          Grégoire
+          Greg
         </p>
       </div>
     </section>
