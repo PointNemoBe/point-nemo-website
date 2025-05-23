@@ -33,7 +33,7 @@ const Footer = () => {
         </div>
         
         <div className="border-t border-white/20 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p>&copy; {currentYear} Point Nemo. Tous droits réservés.</p>
+          <p>&copy; {currentYear} Point Nemo. Tous droits réservés. Entreprise N°1023.448.285</p>
           
           <div className="mt-4 md:mt-0 flex space-x-6">
             <a href="#" className="text-sm hover:text-nemo-leaf transition-colors">
