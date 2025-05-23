@@ -27,8 +27,8 @@ const Hero = () => {
         </p>
 
         <p className="text-base sm:text-lg text-white/80 mb-10 max-w-2xl mx-auto italic">
-          "Ouvrir les yeux, aiguiser les sens, et comprendre notre place dans la
-          grande famille du vivant."
+          Ouvrir les yeux, aiguiser les sens, et comprendre notre place dans la
+          grande famille du vivant.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
