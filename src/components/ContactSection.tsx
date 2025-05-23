@@ -52,7 +52,7 @@ const ContactSection = () => {
       <div className="text-center mb-16">
         <h2 className="section-title">Contact</h2>
         <p className="section-subtitle">
-          Vous souhaitez organiser une excursion ou vous avez des questions ? N'hésitez pas à nous contacter !
+          Vous souhaitez organiser une excursion ou vous avez des questions ? N'hésitez pas à me contacter !
         </p>
       </div>
       
