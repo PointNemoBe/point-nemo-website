@@ -7,6 +7,22 @@ import { Phone } from "lucide-react";
 import { useToast } from "@/components/ui/use-toast";
 import { FaLinkedin } from "react-icons/fa";
 
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import L from 'leaflet';
+import 'leaflet/dist/leaflet.css';
+
+
+// Fix default marker icon issue in Leaflet + Webpack
+import markerIcon2x from 'leaflet/dist/images/marker-icon-2x.png';
+import markerIcon from 'leaflet/dist/images/marker-icon.png';
+import markerShadow from 'leaflet/dist/images/marker-shadow.png';
+
+delete L.Icon.Default.prototype._getIconUrl;
+L.Icon.Default.mergeOptions({
+  iconUrl: markerIcon,
+  iconRetinaUrl: markerIcon2x,
+  shadowUrl: markerShadow,
+});
 const ContactSection = () => {
   const { toast } = useToast();
   const [formData, setFormData] = useState({
@@ -56,8 +72,9 @@ const ContactSection = () => {
         </p>
       </div>
       
-      <div className="w-full max-w-3xl mx-auto">
-        <div>
+      <div className="w-full max-w-6xl mx-auto flex flex-col md:flex-row gap-8">
+        {/* LEFT: Contact form */}
+        <div className="md:w-2/3 w-full">
           <form className="space-y-6" onSubmit={handleSubmit}>
             <div className="grid sm:grid-cols-2 gap-4">
               <div className="space-y-2">
@@ -135,17 +152,43 @@ const ContactSection = () => {
             )}
           </form>
         </div>
-        <div className="mt-8 p-6 bg-white rounded-lg shadow flex flex-col gap-2 items-start">
-          <div className="text-nemo-forest font-bold text-lg">Point Nemo</div>
-          <div>Grégoire Leroy</div>
-          <div className="flex items-center gap-2 mt-1">
-            <Phone className="w-4 h-4 text-nemo-forest" />
-            <a href="tel:+32479943156" className="hover:underline">+32 479 94 31 56</a>
+        {/* RIGHT: Contact info + Map */}
+        <div className="md:w-1/3 w-full flex flex-col gap-6">
+          <div className="p-6 bg-white rounded-lg shadow flex flex-col gap-2 items-start">
+            <div className="text-nemo-forest font-bold text-lg">Point Nemo</div>
+            <div>Grégoire Leroy</div>
+            <div className="flex items-center gap-2 mt-1">
+              <Phone className="w-4 h-4 text-nemo-forest" />
+              <a href="tel:+32479943156" className="hover:underline">+32 479 94 31 56</a>
+            </div>
+            <div className="flex gap-4 mt-4">
+              <a
+                href="https://www.linkedin.com/in/leroygr/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+                className="text-nemo-forest hover:text-nemo-moss transition-colors"
+              >
+                <FaLinkedin size={28} />
+              </a>
+            </div>
           </div>
-          <div className="flex gap-4 mt-4">
-            <a href="https://www.linkedin.com/in/leroygr/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="text-nemo-forest hover:text-nemo-moss transition-colors">
-              <FaLinkedin size={28} />
-            </a>
+
+          <div className="h-72 w-full rounded-lg shadow overflow-hidden">
+            <MapContainer
+              center={[50.595, 4.328]}
+              zoom={9}
+              scrollWheelZoom={false}
+              className="h-full w-full"
+            >
+              <TileLayer
+                url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+              />
+              <Marker position={[50.595, 4.328]}>
+                <Popup>Grégoire Leroy - Point Nemo</Popup>
+              </Marker>
+            </MapContainer>
           </div>
         </div>
       </div>
