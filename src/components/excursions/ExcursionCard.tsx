@@ -27,8 +27,8 @@ export const ExcursionCard = ({ excursion }: { excursion: ExcursionType }) => {
         </div>
         <CardTitle className="text-xl font-display text-nemo-forest">{excursion.title}</CardTitle>
         <CardDescription className="font-medium flex items-center gap-1">
-          <MapPin className="h-4 w-4 text-nemo-forest" />
-          {excursion.location}
+          {/* <MapPin className="h-4 w-4 text-nemo-forest" />
+          {excursion.location} */}
         </CardDescription>
       </CardHeader>
       <CardContent className="flex-grow">

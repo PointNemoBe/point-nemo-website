@@ -8,8 +8,8 @@ export type ExcursionType = {
   image: string;
   duration: string;
   audience: string;
-  difficulty: string;
-  location: string;
+  //difficulty: string;
+  //location: string;
   icon: ReactNode;
 };
 
