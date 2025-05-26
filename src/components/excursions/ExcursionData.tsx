@@ -16,7 +16,7 @@ export const excursionData: ExcursionType[] = [
   },
   {
     id: 3,
-    title: "Pour la famille et les amis",
+    title: "En famille et entre amis",
     description: "Des balades pensées pour petits et grands curieux, avec des contenus accessibles, des jeux d'observation et des temps d'échange en famille ou entre amis.",
     image: "IMG_1803.jpg",
     duration: "1/2 journée",
