@@ -135,18 +135,18 @@ const FAQ = () => {
   return (
     <div className="min-h-screen">
       <Navbar />
-      <div className="pt-24 pb-12 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <h1 className="text-4xl font-display font-bold text-center mb-8 text-nemo-forest">
+      <section id="faq" className="section-container bg-gray-50">
+        <div className="text-center mb-12">
+          <h1 className="section-title">
             Questions Fréquentes
           </h1>
-          <p className="text-lg text-gray-600 text-center max-w-3xl mx-auto mb-12">
+          <p className="section-subtitle max-w-3xl mx-auto">
             Retrouvez ici les réponses aux questions les plus fréquemment posées sur les excursions et services proposés par Point Nemo.
             Si vous avez d'autres questions, n'hésitez pas à me contacter directement.
           </p>
-          <FAQAccordion />
         </div>
-      </div>
+        <FAQAccordion />
+      </section>
     </div>
   );
 };
