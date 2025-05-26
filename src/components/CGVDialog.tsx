@@ -86,9 +86,7 @@ const CGVDialog = ({ open, onOpenChange }: CGVDialogProps) => {
 
           <h3 className="text-lg font-semibold">10. Contact</h3>
           <p>
-            Pour toute question relative aux présentes CGV, vous pouvez contacter Point Nemo :
-            <br />Email : gregoire.leroy86@icloud.com
-            <br />Téléphone : +32 479 94 31 56
+            Pour toute question relative aux présentes CGV, vous pouvez contacter Point Nemo via le formulaire de contact du site web.
           </p>
         </div>
       </DialogContent>
