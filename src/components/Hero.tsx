@@ -23,7 +23,7 @@ const Hero = () => {
 
         <p className="text-lg sm:text-xl md:text-2xl text-white/90 mb-6 max-w-3xl mx-auto">
           Point Nemo vous invite à (re)découvrir la richesse des écosystèmes de
-          nos territoires à travers des excursions guidées immersives.
+          nos territoires à travers des excursions guidées en pleine nature.
         </p>
 
         <p className="text-base sm:text-lg text-white/80 mb-10 max-w-2xl mx-auto italic">

@@ -37,7 +37,7 @@ const AboutSection = () => {
             </h3>
             <p className="text-gray-600">
             <strong>Point Nemo</strong> propose de redécouvrir la richesse des écosystèmes de nos territoires à travers
-            des excursions guidées immersives. L'objectif est d'éveiller les sens, d'ouvrir les yeux
+            des excursions guidées participatives. L'objectif est d'éveiller les sens, d'ouvrir les yeux
             et de transmettre des clés pour comprendre les liens et dynamiques entre le vivant,
             le non-vivant et les activités humaines.
             Une <strong>approche globale</strong> et <strong>systémique</strong> permettant de prendre du recul, d'observer et de comprendre

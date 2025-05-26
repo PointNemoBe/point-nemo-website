@@ -11,7 +11,7 @@ const ExcursionsSection = () => {
       <div className="text-center mb-12">
         <h2 className="section-title">Nos excursions</h2>
         <p className="section-subtitle max-w-3xl mx-auto">
-        Des excursions immersives à la découverte de la richesse des paysages et écosystèmes de nos régions.
+        Des excursions participatives à la découverte de la richesse des paysages et écosystèmes de nos régions.
         </p>
       </div>
 
