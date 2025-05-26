@@ -1,8 +1,10 @@
-
 import PointNemoLogo from "./PointNemoLogo";
+import { useState } from "react";
+import CGVDialog from "./CGVDialog";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
+  const [cgvOpen, setCgvOpen] = useState(false);
   
   return (
     <footer className="bg-nemo-forest text-white py-12">
@@ -36,15 +38,20 @@ const Footer = () => {
           <p>&copy; {currentYear} Point Nemo. Tous droits réservés. Entreprise N°1023.448.285</p>
           
           <div className="mt-4 md:mt-0 flex space-x-6">
+            <button 
+              onClick={() => setCgvOpen(true)} 
+              className="text-sm hover:text-nemo-leaf transition-colors"
+            >
+              Conditions Générales de Vente (CGV)
+            </button>
             <a href="#" className="text-sm hover:text-nemo-leaf transition-colors">
-              Politique de confidentialité
-            </a>
-            <a href="#" className="text-sm hover:text-nemo-leaf transition-colors">
-              Mentions légales
+              RGPD
             </a>
           </div>
         </div>
       </div>
+      
+      <CGVDialog open={cgvOpen} onOpenChange={setCgvOpen} />
     </footer>
   );
 };

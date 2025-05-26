@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -33,6 +33,26 @@ const ContactSection = () => {
     message: "",
   });
   const [status, setStatus] = useState<'idle' | 'success' | 'error'>('idle');
+
+  // Ajout d'un useEffect pour appliquer un style CSS personnalisé à Leaflet
+  useEffect(() => {
+    // Ajouter une règle CSS pour réduire le z-index des éléments Leaflet
+    const style = document.createElement('style');
+    style.innerHTML = `
+      .leaflet-pane,
+      .leaflet-control,
+      .leaflet-top,
+      .leaflet-bottom {
+        z-index: 10 !important;
+      }
+    `;
+    document.head.appendChild(style);
+
+    // Nettoyer en supprimant le style lors du démontage du composant
+    return () => {
+      document.head.removeChild(style);
+    };
+  }, []);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -174,7 +194,7 @@ const ContactSection = () => {
             </div>
           </div>
 
-          <div className="h-72 w-full rounded-lg shadow overflow-hidden">
+          <div className="h-72 w-full rounded-lg shadow overflow-hidden" style={{ position: 'relative', zIndex: 0 }}>
             <MapContainer
               center={[50.595, 4.328]}
               zoom={9}
