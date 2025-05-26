@@ -31,6 +31,7 @@ const ContactSection = () => {
     email: "",
     phone: "",
     message: "",
+    consent: false,
   });
   const [status, setStatus] = useState<'idle' | 'success' | 'error'>('idle');
 
@@ -55,8 +56,11 @@ const ContactSection = () => {
   }, []);
 
   const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({ ...prev, [name]: value }));
+    const { name, value, type, checked } = e.target;
+    setFormData((prev) => ({ 
+      ...prev, 
+      [name]: type === 'checkbox' ? checked : value 
+    }));
   };
 
   const handleSubmit = async (e) => {
@@ -74,7 +78,7 @@ const ContactSection = () => {
       const data = await response.json();
       if (response.ok) {
         setStatus('success');
-        setFormData({ nom: '', prenom: '', email: '', phone: '', message: '' });
+        setFormData({ nom: '', prenom: '', email: '', phone: '', message: '', consent: false });
       } else {
         setStatus('error');
       }
@@ -156,18 +160,44 @@ const ContactSection = () => {
                 required
               />
             </div>
+            <div className="flex items-start space-x-2">
+              <input
+                type="checkbox"
+                id="consent"
+                name="consent"
+                checked={formData.consent}
+                onChange={handleChange}
+                required
+                className="mt-1 h-4 w-4 rounded border-gray-300 text-nemo-forest focus:ring-nemo-moss"
+              />
+              <Label htmlFor="consent" className="text-sm">
+                J'accepte que mes informations soient traitées par Point Nemo pour répondre à ma demande. Ces données ne seront pas utilisées à des fins commerciales ni partagées avec des tiers. <span className="text-red-600">*</span>
+              </Label>
+            </div>
             <Button type="submit" className="w-full bg-nemo-forest hover:bg-nemo-moss">
               Envoyer le message
             </Button>
             <p className="text-xs text-gray-500 mt-2">* Champs obligatoires</p>
             {status === 'success' && (
-              <div className="mt-2 text-green-700 bg-green-100 border border-green-300 rounded p-2 text-center">
-                Message envoyé ! Nous vous répondrons dans les plus brefs délais.
+              <div className="mt-4 flex items-center p-4 bg-green-50 border-l-4 border-nemo-moss rounded-md shadow-sm">
+                <svg className="h-6 w-6 text-nemo-forest mr-3 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                </svg>
+                <div>
+                  <p className="text-nemo-forest font-medium">Message envoyé avec succès !</p>
+                  <p className="text-sm text-gray-600 mt-1">Nous vous répondrons dans les plus brefs délais.</p>
+                </div>
               </div>
             )}
             {status === 'error' && (
-              <div className="mt-2 text-red-700 bg-red-100 border border-red-300 rounded p-2 text-center">
-                Une erreur est survenue. Veuillez réessayer plus tard.
+              <div className="mt-4 flex items-center p-4 bg-red-50 border-l-4 border-red-500 rounded-md shadow-sm">
+                <svg className="h-6 w-6 text-red-600 mr-3 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <div>
+                  <p className="text-red-700 font-medium">Une erreur est survenue</p>
+                  <p className="text-sm text-red-600 mt-1">Veuillez réessayer plus tard ou nous contacter par téléphone.</p>
+                </div>
               </div>
             )}
           </form>
